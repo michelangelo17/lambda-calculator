@@ -1,0 +1,36 @@
+button {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  margin: 20px;
+  color: white;
+  border: none;
+  filter: drop-shadow(0 0.3rem 0.3rem black);
+}
+
+.operators {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 226px;
+  left: 450px;
+}
+
+.numButton {
+  background-color: $numButtonsColor;
+}
+
+.opButton {
+  background-color: $opButtonsColor;
+}
+
+.specialButton {
+  background-color: $specButtonsColor;
+  margin-top: 40px;
+}
+
+button[value='0'] {
+  width: 235px;
+  border-radius: 50px;
+}
