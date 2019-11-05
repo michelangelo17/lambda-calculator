@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import Numbers from './components/ButtonComponents/NumberButtons/Numbers'
+import React, { useState } from 'react';
+import Numbers from './components/ButtonComponents/NumberButtons/Numbers';
 import Operators from './components/ButtonComponents/OperatorButtons/Operators';
-import Logo from "./components/DisplayComponents/Logo";
-import Specials from "./components/ButtonComponents/SpecialButtons/Specials";
-import Display from "./components/DisplayComponents/Display";
+import Logo from './components/DisplayComponents/Logo';
+import Specials from './components/ButtonComponents/SpecialButtons/Specials';
+import Display from './components/DisplayComponents/Display';
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
 
@@ -16,26 +16,14 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   const [equation, setEquation] = useState('');
   return (
-    <div className="container">
+    <div className='container'>
       <Logo />
-      <div className="App">
+      <div className='App'>
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Display 
-          equation={equation}
-        />
-        <Specials 
-          setEquation={setEquation}
-          equation={equation}
-        />
-        <Numbers 
-          setEquation={setEquation}
-          equation={equation}
-        />
-        <Operators 
-          setEquation={setEquation}
-          equation={equation}
-        />
-        
+        <Display equation={equation} />
+        <Specials setEquation={setEquation} equation={equation} />
+        <Numbers setEquation={setEquation} equation={equation} />
+        <Operators setEquation={setEquation} equation={equation} />
       </div>
     </div>
   );
